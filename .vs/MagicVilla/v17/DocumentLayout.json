@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Jean\\Desktop\\CursoNet\\MagicVilla\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CB7B5FC-29C5-45EE-AA6F-E4CC8B2D9901}|MagicVilla_API\\MagicVilla_API.csproj|c:\\users\\jean\\desktop\\cursonet\\magicvilla\\magicvilla_api\\magicvilla_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4CB7B5FC-29C5-45EE-AA6F-E4CC8B2D9901}|MagicVilla_API\\MagicVilla_API.csproj|solutionrelative:magicvilla_api\\magicvilla_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{4CB7B5FC-29C5-45EE-AA6F-E4CC8B2D9901}|MagicVilla_API\\MagicVilla_API.csproj|c:\\users\\jean\\desktop\\cursonet\\magicvilla\\magicvilla_api\\controllers\\villacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB7B5FC-29C5-45EE-AA6F-E4CC8B2D9901}|MagicVilla_API\\MagicVilla_API.csproj|solutionrelative:magicvilla_api\\controllers\\villacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MagicVilla_API",
-              "DocumentMoniker": "C:\\Users\\Jean\\Desktop\\CursoNet\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj",
-              "RelativeDocumentMoniker": "MagicVilla_API\\MagicVilla_API.csproj",
-              "ToolTip": "C:\\Users\\Jean\\Desktop\\CursoNet\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj",
-              "RelativeToolTip": "MagicVilla_API\\MagicVilla_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-14T22:14:50.522Z",
+              "Title": "VillaController.cs",
+              "DocumentMoniker": "C:\\Users\\Jean\\Desktop\\CursoNet\\MagicVilla\\MagicVilla_API\\Controllers\\VillaController.cs",
+              "RelativeDocumentMoniker": "MagicVilla_API\\Controllers\\VillaController.cs",
+              "ToolTip": "C:\\Users\\Jean\\Desktop\\CursoNet\\MagicVilla\\MagicVilla_API\\Controllers\\VillaController.cs",
+              "RelativeToolTip": "MagicVilla_API\\Controllers\\VillaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T22:50:15.992Z",
               "EditorCaption": ""
             }
           ]
