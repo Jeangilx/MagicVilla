@@ -17,7 +17,7 @@ namespace MagicVilla_API.Controllers
         }
 
         //[HttpGet("id:int")]
-        [HttpGet("id:int", Name = "GetVilla")]
+        [HttpGet("{id:int}", Name = "GetVilla")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -48,7 +48,7 @@ namespace MagicVilla_API.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (VillaStore.villaList.FirstOrDefault(v=>v.Nombre.ToLower()==villaDto.Nombre.ToLower()) !=null)
+            if (VillaStore.villaList.FirstOrDefault(v => v.Nombre.ToLower() == villaDto.Nombre.ToLower()) != null)
             {
                 ModelState.AddModelError("NombreExiste", "La villa ya existe");
                 return BadRequest(ModelState);
@@ -59,17 +59,17 @@ namespace MagicVilla_API.Controllers
                 return BadRequest(villaDto);
             }
 
-            if (villaDto.Id>0)
-            { 
+            if (villaDto.Id > 0)
+            {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
 
-            villaDto.Id = VillaStore.villaList.OrderByDescending(v=>v.Id).FirstOrDefault().Id+1;
+            villaDto.Id = VillaStore.villaList.OrderByDescending(v => v.Id).FirstOrDefault().Id + 1;
             VillaStore.villaList.Add(villaDto);
 
             //return Ok(villaDto);
 
-            return CreatedAtRoute("GetVilla", new {id= villaDto.Id}, villaDto);
+            return CreatedAtRoute("GetVilla", new { id = villaDto.Id }, villaDto);
         }
 
         [HttpDelete("{id:int}")]
@@ -92,6 +92,24 @@ namespace MagicVilla_API.Controllers
             VillaStore.villaList.Remove(villa);
 
             return NoContent();
+        }
+
+        [HttpPut("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult UpdateVilla(int id, [FromBody] VillaDto villaDto)
+        {
+            if (villaDto==null || id!=villaDto.Id)
+            {
+                return BadRequest();
+            }
+            var villa = VillaStore.villaList.FirstOrDefault(v => v.Id == id);
+            villa.Nombre = villaDto.Nombre;
+            villa.Ocupantes = villaDto.Ocupantes;
+            villa.MetrosCuadrados = villaDto.MetrosCuadrados;
+
+            return NoContent();
+
         }
 
 

@@ -61,6 +61,51 @@
   },
   {
     "ContainingType": "MagicVilla_API.Controllers.VillaController",
+    "Method": "GetVilla",
+    "RelativePath": "api/Villa/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MagicVilla_API.Modelos.Dto.VillaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ],
+    "EndpointName": "GetVilla"
+  },
+  {
+    "ContainingType": "MagicVilla_API.Controllers.VillaController",
     "Method": "DeleteVilla",
     "RelativePath": "api/Villa/{id}",
     "HttpMethod": "DELETE",
@@ -101,27 +146,28 @@
   },
   {
     "ContainingType": "MagicVilla_API.Controllers.VillaController",
-    "Method": "GetVilla",
-    "RelativePath": "api/Villa/id:int",
-    "HttpMethod": "GET",
+    "Method": "UpdateVilla",
+    "RelativePath": "api/Villa/{id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
+      },
+      {
+        "Name": "villaDto",
+        "Type": "MagicVilla_API.Modelos.Dto.VillaDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "MagicVilla_API.Modelos.Dto.VillaDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
       },
       {
         "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
@@ -131,17 +177,7 @@
           "text/json"
         ],
         "StatusCode": 400
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
       }
-    ],
-    "EndpointName": "GetVilla"
+    ]
   }
 ]
