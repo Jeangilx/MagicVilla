@@ -33,3 +33,8 @@ C:\Users\Jean\Desktop\CursoNet\MagicVilla\MagicVilla_API\obj\Debug\net9.0\refint
 C:\Users\Jean\Desktop\CursoNet\MagicVilla\MagicVilla_API\obj\Debug\net9.0\MagicVilla_API.pdb
 C:\Users\Jean\Desktop\CursoNet\MagicVilla\MagicVilla_API\obj\Debug\net9.0\MagicVilla_API.genruntimeconfig.cache
 C:\Users\Jean\Desktop\CursoNet\MagicVilla\MagicVilla_API\obj\Debug\net9.0\ref\MagicVilla_API.dll
+C:\Users\Jean\Desktop\CursoNet\MagicVilla\MagicVilla_API\bin\Debug\net9.0\MagicVilla_API.xml
+C:\Users\Jean\Desktop\CursoNet\MagicVilla\MagicVilla_API\obj\Debug\net9.0\MagicVilla_API.xml
+C:\Users\Jean\Desktop\CursoNet\MagicVilla\MagicVilla_API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jean\Desktop\CursoNet\MagicVilla\MagicVilla_API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jean\Desktop\CursoNet\MagicVilla\MagicVilla_API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
